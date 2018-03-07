@@ -2,6 +2,9 @@ export function todoStore(text = '') {
   return {
     text: text,
     completed: false,
+    toggle() {
+      this.completed = !this.completed;
+    }
   };
 }
 
@@ -11,7 +14,7 @@ export const TodoView = ({ state }) => (
       <input
         type="checkbox"
         checked={state.completed}
-        onChange={e => state.completed = e.target.checked }
+        onChange={() => state.toggle() }
       />
       { state.text }
     </label>
