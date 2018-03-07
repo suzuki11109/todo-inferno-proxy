@@ -1,0 +1,17 @@
+{
+  "name": "todo-inferno-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "babel-plugin-inferno": "^4.0.0",
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.6.2"
+  },
+  "dependencies": {
+    "inferno": "^4.0.8"
+  }
+}
